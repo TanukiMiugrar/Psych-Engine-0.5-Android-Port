@@ -205,6 +205,14 @@ class TitleState extends MusicBeatState
 			bg.loadGraphic(Paths.image(titleJSON.backgroundSprite));
 		}else{
 			bg.makeGraphic(FlxG.width, FlxG.height, FlxColor.YELLOW);
+		}else{
+
+			bg.makeGraphic(FlxG.width, FlxG.height, FlxColor.RED);
+
+		}else{
+
+			bg.makeGraphic(FlxG.width, FlxG.height, FlxColor.BLUE);
+
 		}
 			
 		add(bg);
