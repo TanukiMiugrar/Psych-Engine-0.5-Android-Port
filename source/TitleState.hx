@@ -204,15 +204,7 @@ class TitleState extends MusicBeatState
 		if (titleJSON.backgroundSprite != null && titleJSON.backgroundSprite.length > 0 && titleJSON.backgroundSprite != "none"){
 			bg.loadGraphic(Paths.image(titleJSON.backgroundSprite));
 		}else{
-			bg.makeGraphic(FlxG.width, FlxG.height, FlxColor.YELLOW);
-		}else{
-
-			bg.makeGraphic(FlxG.width, FlxG.height, FlxColor.RED);
-
-		}else{
-
 			bg.makeGraphic(FlxG.width, FlxG.height, FlxColor.BLUE);
-
 		}
 			
 		add(bg);
@@ -292,7 +284,7 @@ class TitleState extends MusicBeatState
 		add(credGroup);
 		textGroup = new FlxGroup();
 
-		blackScreen = new FlxSprite().makeGraphic(FlxG.width, FlxG.height, FlxColor.BLACK);
+		blackScreen = new FlxSprite().makeGraphic(FlxG.width, FlxG.height, FlxColor.YELLOW);
 		credGroup.add(blackScreen);
 
 		credTextShit = new Alphabet(0, 0, "", true);
